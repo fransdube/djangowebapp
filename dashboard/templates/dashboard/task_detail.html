@@ -1,0 +1,49 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>{{ task.name }}</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Status:</strong>
+            <span class="badge bg-{% if task.status == 'completed' %}success{% elif task.status == 'running' %}primary{% elif task.status == 'failed' %}danger{% else %}secondary{% endif %}">
+                {{ task.get_status_display }}
+            </span>
+        </p>
+        <p><strong>Description:</strong> {{ task.description|linebreaks }}</p>
+        <p><strong>Created:</strong> {{ task.created_at }}</p>
+        <p><strong>Scheduled:</strong> {{ task.scheduled_time|default:"Not scheduled" }}</p>
+
+        <div class="mt-4">
+            <h5>Execution Logs</h5>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for log in task.tasklog_set.all %}
+                    <tr>
+                        <td>{{ log.timestamp }}</td>
+                        <td>{{ log.status }}</td>
+                        <td>{{ log.status_message }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="3">No logs available.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer">
+        <a href="{% url 'edit_task' task.pk %}" class="btn btn-info">Edit</a>
+        <a href="{% url 'dashboard' %}" class="btn btn-secondary">Back to Dashboard</a>
+    </div>
+</div>
+{% endblock %}
