@@ -1,0 +1,213 @@
+Watching for file changes with StatReloader
+[05/Jan/2026 10:11:51] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:11:52] "POST /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:14:08] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:14:09] "POST /login/ HTTP/1.1" 302 0
+[05/Jan/2026 10:14:09] "GET / HTTP/1.1" 200 3819
+[05/Jan/2026 10:14:09] "GET /task/new/ HTTP/1.1" 200 4482
+[05/Jan/2026 10:14:09] "POST /logout/ HTTP/1.1" 302 0
+[05/Jan/2026 10:14:09] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:15:37] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:15:38] "POST /login/ HTTP/1.1" 302 0
+[05/Jan/2026 10:15:38] "GET / HTTP/1.1" 200 3819
+[05/Jan/2026 10:15:38] "GET /task/new/ HTTP/1.1" 200 4482
+[05/Jan/2026 10:15:38] "POST /logout/ HTTP/1.1" 302 0
+[05/Jan/2026 10:15:38] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:17:07] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:17:08] "POST /login/ HTTP/1.1" 302 0
+[05/Jan/2026 10:17:08] "GET / HTTP/1.1" 200 3819
+[05/Jan/2026 10:17:08] "GET /task/new/ HTTP/1.1" 200 4482
+[05/Jan/2026 10:17:08] "POST /logout/ HTTP/1.1" 302 0
+[05/Jan/2026 10:17:08] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:18:41] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:18:42] "POST /login/ HTTP/1.1" 302 0
+[05/Jan/2026 10:18:42] "GET / HTTP/1.1" 200 3819
+[05/Jan/2026 10:18:42] "GET /task/new/ HTTP/1.1" 200 4482
+[05/Jan/2026 10:18:42] "POST /logout/ HTTP/1.1" 302 0
+[05/Jan/2026 10:18:42] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:20:19] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:20:19] "POST /login/ HTTP/1.1" 302 0
+[05/Jan/2026 10:20:19] "GET / HTTP/1.1" 200 3819
+[05/Jan/2026 10:20:20] "GET /task/new/ HTTP/1.1" 200 4482
+[05/Jan/2026 10:20:20] "POST /task/new/ HTTP/1.1" 302 0
+[05/Jan/2026 10:20:20] "GET / HTTP/1.1" 200 4541
+/app/dashboard/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2026 - 10:11:05
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/app/dashboard/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 19 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, dashboard, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2026 - 10:22:57
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/app/dashboard/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 19 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, dashboard, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2026 - 10:27:57
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[05/Jan/2026 10:29:49] "GET /login/ HTTP/1.1" 200 2811
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/forms/forms.py", line 434, in full_clean
+    self._clean_form()
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/forms/forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/contrib/auth/forms.py", line 252, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/models/query.py", line 1886, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_user
+[05/Jan/2026 10:29:49] "POST /login/ HTTP/1.1" 500 219742
+[05/Jan/2026 10:31:43] "GET /login/ HTTP/1.1" 200 2811
+[05/Jan/2026 10:31:43] "POST /login/ HTTP/1.1" 302 0
+[05/Jan/2026 10:31:43] "GET / HTTP/1.1" 200 3819
+[05/Jan/2026 10:31:44] "GET /task/new/ HTTP/1.1" 200 4482
+[05/Jan/2026 10:31:44] "POST /task/new/ HTTP/1.1" 302 0
+[05/Jan/2026 10:31:44] "GET / HTTP/1.1" 200 4748
+[05/Jan/2026 10:31:44] "POST /task/1/run/ HTTP/1.1" 302 0
+[05/Jan/2026 10:31:44] "GET / HTTP/1.1" 200 4772
+/app/task_automator/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 19 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, dashboard, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2026 - 10:28:30
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/app/task_automator/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2026 - 10:50:38
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
