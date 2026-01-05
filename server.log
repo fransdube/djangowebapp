@@ -188,3 +188,26 @@ django.db.utils.OperationalError: no such table: auth_user
 [05/Jan/2026 10:31:44] "GET / HTTP/1.1" 200 4748
 [05/Jan/2026 10:31:44] "POST /task/1/run/ HTTP/1.1" 302 0
 [05/Jan/2026 10:31:44] "GET / HTTP/1.1" 200 4772
+/app/task_automator/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 19 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, dashboard, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2026 - 10:28:30
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/app/task_automator/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 05, 2026 - 10:50:38
+Django version 4.2.27, using settings 'task_automator.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
